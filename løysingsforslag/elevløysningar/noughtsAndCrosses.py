@@ -130,7 +130,7 @@ def noughtsAndCrosses(player=1, usedCoordinatesUpdating=[]):
 
 if __name__ == "__main__":
     clearScreen()
-    print(board)
+    printBoard()
     noughtsAndCrosses()
     while True: 
         fortsett = input("Vil du fortsette? Y/N ")
