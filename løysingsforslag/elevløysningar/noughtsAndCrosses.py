@@ -1,4 +1,4 @@
-#Laget av Thomas
+#Laged av Thomas
 
 import os 
 
@@ -130,11 +130,17 @@ def noughtsAndCrosses(player=1, usedCoordinatesUpdating=[]):
 
 if __name__ == "__main__":
     clearScreen()
+    print(board)
     noughtsAndCrosses()
     while True: 
         fortsett = input("Vil du fortsette? Y/N ")
         if fortsett == "Y":
             print("Ny runde")
+            board = [
+    [-1,-1,-1],
+    [-1,-1,-1],
+    [-1,-1,-1]
+    ]
             clearScreen()
             noughtsAndCrosses()
         elif fortsett == "N":
